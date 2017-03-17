@@ -1,0 +1,40 @@
+create database tuhut;
+use tuhut;
+
+create table student(
+id int primary key,
+lastname varchar(40),
+firstname varchar(40),
+adress varchar(40),
+birthdate varchar(40));
+
+create table course(
+id int primary key,
+name varchar(40),
+teacher varchar(40),
+year int);
+
+
+
+create table enrollment(
+id int primary key,
+lastname varchar(40),
+firstname varchar(40),
+materie varchar(40),
+adress varchar(40),
+birthdate varchar(40));
+
+
+insert into student values
+(1,"Bogdan","Milas","str republicii","12-12-2011"),
+(2,"Tuhut","Raul","str republicii","12-12-2011");
+
+insert into course values
+(1,"istorie","potolea",3),
+(2,"mate","ivan",1);
+
+insert into enrollment values
+(1,"tuhut","raul","istorie","republicii","21-2-2011"),
+(2,"mircea","ivan","romana","sud","20-1-2001");
+
+drop database tuhut;
